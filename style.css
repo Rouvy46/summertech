@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+ flex-direction: column;
+}
+header{
+  border-bottom: 4px solid rgb(255, 81, 0);
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-around;
+  align-items: center;
+
+}
+header h1{
+  color: rgb(255, 81, 0);
+}
+span{
+  color: rgb(0, 0, 0);
+}
+nav ul{
+  display: flex;
+}
+nav ul li{
+  list-style-type: none;
+}
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  background-color: rgb(255, 81, 0);
+  margin-right: 10px;
+  padding: 6px;
+  border-radius: 16px;
+}
+ /* .........................accueil.............................*/
+#Accueil{
+ background-image: url('/image/bg.jpg');
+ background-size: cover;
+ background-position: center;
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: relative;
+}
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color : white;
+}
+.overlay h2{
+  display: flex;
+  color: rgb(255, 81, 0);
+  text-shadow: 2px 2px 3px white;
+  text-transform: uppercase;
+  font-size: 28px;
+}
+.overlay p{
+ font-size: 20px;
+}
+  /*.......................Activite...................*/
+#activite{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container-activite{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.container-activite img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 350px;
+  height: auto;
+  margin-bottom: 10px;
+}
+#activite h2{ 
+  margin: 20px 0px 20px 0px;
+  text-align: center;
+}
+ /*  ..................nos services................ */
+ #service {
+  width: 100%;
+  padding: 20px 0;
+}
+
+#service h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.carousel-wrapper {
+  width: 100%;
+  overflow: hidden; /* Masquer les éléments qui débordent */
+  position: relative;
+}
+
+.carousel-inner {
+  display: flex;
+  width: 900%; /* Largeur totale pour inclure tous les éléments en ligne */
+  animation: slide 30s infinite; /* Animation infinie sur 30 secondes */
+}
+
+.sevis {
+  flex: 0 0 auto; /* Chaque élément conserve sa largeur */
+  width: 200px; /* Largeur fixe pour chaque élément */
+  margin: 0 10px; /* Espacement horizontal entre les éléments */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.sevis img {
+  width: 100%; /* Adapter l'image à la largeur du conteneur */
+  height: auto; /* Garder les proportions de l'image */
+  border-radius: 10px; /* Coins arrondis pour les images */
+  border: 2px solid #ddd; /* Bordure autour de l'image */
+}
+
+.sevis h3 {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  0% {
+    transform: translateX(0);
+  }
+}
